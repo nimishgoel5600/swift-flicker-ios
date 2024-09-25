@@ -2,7 +2,6 @@
 //  Test_DemoApp.swift
 //  Test Demo
 //
-//  Created by Yash Parikh on 04/07/24.
 //
 
 import SwiftUI
@@ -11,7 +10,7 @@ import SwiftUI
 struct Test_DemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

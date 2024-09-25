@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		E12064DA2C36E6BE00C7AE72 /* Test_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12064D92C36E6BE00C7AE72 /* Test_DemoApp.swift */; };
-		E12064DC2C36E6BE00C7AE72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12064DB2C36E6BE00C7AE72 /* ContentView.swift */; };
+		E12064DC2C36E6BE00C7AE72 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12064DB2C36E6BE00C7AE72 /* HomeView.swift */; };
 		E12064DE2C36E6C100C7AE72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12064DD2C36E6C100C7AE72 /* Assets.xcassets */; };
 		E12064E12C36E6C100C7AE72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12064E02C36E6C100C7AE72 /* Preview Assets.xcassets */; };
+		E12064EB2C36E76300C7AE72 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12064EA2C36E76300C7AE72 /* HomeViewModel.swift */; };
+		E12064ED2C36E79E00C7AE72 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12064EC2C36E79E00C7AE72 /* SearchBar.swift */; };
+		E12064EF2C36E96000C7AE72 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12064EE2C36E96000C7AE72 /* APIClient.swift */; };
+		E12064F32C36EA5700C7AE72 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12064F22C36EA5700C7AE72 /* Flickr.swift */; };
+		E12064F52C36EFAA00C7AE72 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12064F42C36EFAA00C7AE72 /* AsyncImageView.swift */; };
+		E12064F72C36F3E600C7AE72 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12064F62C36F3E600C7AE72 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E12064D62C36E6BE00C7AE72 /* Test Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12064D92C36E6BE00C7AE72 /* Test_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_DemoApp.swift; sourceTree = "<group>"; };
-		E12064DB2C36E6BE00C7AE72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E12064DB2C36E6BE00C7AE72 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E12064DD2C36E6C100C7AE72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E12064E02C36E6C100C7AE72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E12064EA2C36E76300C7AE72 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E12064EC2C36E79E00C7AE72 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E12064EE2C36E96000C7AE72 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E12064F22C36EA5700C7AE72 /* Flickr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flickr.swift; sourceTree = "<group>"; };
+		E12064F42C36EFAA00C7AE72 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		E12064F62C36F3E600C7AE72 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,11 @@
 		E12064D82C36E6BE00C7AE72 /* Test Demo */ = {
 			isa = PBXGroup;
 			children = (
+				E12064F82C36F62C00C7AE72 /* Utility */,
+				E12064E92C36E6F200C7AE72 /* Model */,
+				E12064E82C36E6EA00C7AE72 /* ViewModel */,
+				E12064E72C36E6E300C7AE72 /* View */,
 				E12064D92C36E6BE00C7AE72 /* Test_DemoApp.swift */,
-				E12064DB2C36E6BE00C7AE72 /* ContentView.swift */,
 				E12064DD2C36E6C100C7AE72 /* Assets.xcassets */,
 				E12064DF2C36E6C100C7AE72 /* Preview Content */,
 			);
@@ -65,6 +80,41 @@
 				E12064E02C36E6C100C7AE72 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E12064E72C36E6E300C7AE72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E12064DB2C36E6BE00C7AE72 /* HomeView.swift */,
+				E12064EC2C36E79E00C7AE72 /* SearchBar.swift */,
+				E12064F42C36EFAA00C7AE72 /* AsyncImageView.swift */,
+				E12064F62C36F3E600C7AE72 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E12064E82C36E6EA00C7AE72 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E12064EA2C36E76300C7AE72 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E12064E92C36E6F200C7AE72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E12064F22C36EA5700C7AE72 /* Flickr.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E12064F82C36F62C00C7AE72 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E12064EE2C36E96000C7AE72 /* APIClient.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E12064DC2C36E6BE00C7AE72 /* ContentView.swift in Sources */,
+				E12064DC2C36E6BE00C7AE72 /* HomeView.swift in Sources */,
+				E12064F72C36F3E600C7AE72 /* DetailView.swift in Sources */,
+				E12064ED2C36E79E00C7AE72 /* SearchBar.swift in Sources */,
+				E12064EB2C36E76300C7AE72 /* HomeViewModel.swift in Sources */,
+				E12064EF2C36E96000C7AE72 /* APIClient.swift in Sources */,
+				E12064F32C36EA5700C7AE72 /* Flickr.swift in Sources */,
 				E12064DA2C36E6BE00C7AE72 /* Test_DemoApp.swift in Sources */,
+				E12064F52C36EFAA00C7AE72 /* AsyncImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
